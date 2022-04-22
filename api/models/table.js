@@ -4,6 +4,7 @@ const reservationSchema = require("./reservation").schema;
 
 var tableSchema = new mongoose.Schema({
   name: String,
+  capacity:Number,
   isAvailable: Boolean,
   location: String,
   reservation: {
